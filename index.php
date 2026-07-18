@@ -1,0 +1,55 @@
+<?php
+$title = "NeroClaw — Premier Repo";
+$version = "v1.0.0";
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= $title ?></title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 3rem;
+            text-align: center;
+            max-width: 500px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        h1 { font-size: 2.5rem; color: #58a6ff; margin-bottom: 0.5rem; }
+        .badge {
+            display: inline-block;
+            background: #238636;
+            color: #fff;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+        }
+        p { line-height: 1.6; color: #8b949e; }
+        .footer { margin-top: 1.5rem; font-size: 0.8rem; color: #484f58; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🦞 NeroClaw</h1>
+        <div class="badge"><?= $version ?></div>
+        <p>Mon premier repo PHP sur GitHub.<br>
+        Hébergé avec ❤️ sur un ASUS E402YA sous Debian.</p>
+        <div class="footer">NeroClaw &bull; <?= date('Y') ?></div>
+    </div>
+</body>
+</html>
